@@ -15,12 +15,14 @@
     "node": ">=18.20.3"
   },
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/common/infrastructure/http/server.ts",
-    "lint": "eslint ."
+    "dev": "npx dotenv-cli -e .env -- ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/common/infrastructure/http/server.ts",
+    "lint": "eslint .",
+    "test": "npx dotenv-cli -e .env.test -- jest --runInBand"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "dotenv-cli": "^8.0.0",
     "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
     "pg": "^8.14.0",
