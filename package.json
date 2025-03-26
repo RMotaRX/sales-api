@@ -1,6 +1,6 @@
 {
   "name": "sales-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sales Application Testing Resolution [HuntIt]",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -27,6 +27,8 @@
     "express-async-errors": "^3.1.1",
     "pg": "^8.14.0",
     "reflect-metadata": "^0.2.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
     "typeorm": "^0.3.21",
     "zod": "^3.24.2"
   },
@@ -35,6 +37,8 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^22.13.10",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3",
