@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "npx dotenv-cli -e .env -- ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/common/infrastructure/http/server.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "lint": "eslint .",
     "test": "npx dotenv-cli -e .env.test -- jest --runInBand"
   },
@@ -25,7 +26,7 @@
     "dotenv-cli": "^8.0.0",
     "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
-    "pg": "^8.14.0",
+    "pg": "^8.14.1",
     "reflect-metadata": "^0.2.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
