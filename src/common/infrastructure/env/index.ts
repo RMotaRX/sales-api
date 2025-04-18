@@ -1,4 +1,4 @@
-import { AppError } from '@/common/domain/app-error';
+import { AppError } from '@/common/domain/errors/app-error';
 import 'dotenv/config';
 import { z } from 'zod';
 
